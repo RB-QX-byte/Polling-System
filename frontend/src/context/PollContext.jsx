@@ -26,7 +26,10 @@ export const PollProvider = ({ children }) => {
 
   useEffect(() => {
     // Initialize socket connection
-    socketService.connect();
+    const serverUrl = import.meta.env.PROD
+      ? 'https://polling-system-backend-two.vercel.app'
+      : 'http://localhost:3001';
+    socketService.connect(serverUrl);
 
     // Initialize chat service
     chatService.initialize();

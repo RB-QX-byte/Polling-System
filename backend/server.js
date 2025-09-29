@@ -8,7 +8,11 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: ["http://localhost:5173", "http://localhost:5174"], // Support both Vite ports
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "https://polling-system-nine-alpha.vercel.app"
+    ],
     methods: ["GET", "POST"]
   }
 });
