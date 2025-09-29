@@ -8,7 +8,7 @@ class SocketService {
     this.studentName = null;
   }
 
-  connect(serverUrl = 'http://localhost:3001') {
+  connect(serverUrl = 'https://polling-backend-b3s5.onrender.com') {
     if (this.socket && this.isConnected) {
       return this.socket;
     }

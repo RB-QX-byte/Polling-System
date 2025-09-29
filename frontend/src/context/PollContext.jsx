@@ -27,7 +27,7 @@ export const PollProvider = ({ children }) => {
   useEffect(() => {
     // Initialize socket connection
     const serverUrl = import.meta.env.PROD
-      ? 'https://polling-system-wg5w.vercel.app'
+      ? 'https://polling-backend-b3s5.onrender.com'
       : 'http://localhost:3001';
     socketService.connect(serverUrl);
 

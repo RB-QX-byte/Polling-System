@@ -269,7 +269,7 @@ function PollHistory() {
     const fetchPollHistory = async () => {
       try {
         console.log('Fetching poll history...');
-        const response = await fetch('http://localhost:3001/api/poll/history');
+        const response = await fetch('https://polling-backend-b3s5.onrender.com/api/poll/history');
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
