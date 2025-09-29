@@ -11,7 +11,7 @@ const io = socketIo(server, {
     origin: [
       "http://localhost:5173",
       "http://localhost:5174",
-      "https://polling-system-nine-alpha.vercel.app"
+      "https://polling-system-umber.vercel.app"
     ],
     methods: ["GET", "POST"]
   }
